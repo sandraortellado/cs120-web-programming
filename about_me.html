@@ -4,12 +4,15 @@
 	<head>
 		<title>Assignment: HTML</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<style>
 			@import url("fontawesome-all.min.css");
 			@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
 			html {
 				box-sizing: border-box;
+			}
+
+			#page-wrapper > section {
+				margin-bottom: 0;
 			}
 
 			a {
@@ -63,7 +66,7 @@
 			}
 
 			li {
-					text-align: left;
+				text-align: left;
 			}
 
 			section {
@@ -114,9 +117,6 @@
 				text-align: center;
 			}
 
-			#travels ul.actions {
-				margin-top: 1.25em;
-			}
 			#animals {
 				position: relative;
 				overflow: hidden;
@@ -125,7 +125,6 @@
 				text-align: center;
 				border-top: solid 2px #e5e5e5;
 				border-bottom: solid 2px #e5e5e5;
-				box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 				position: relative;
 				text-transform: uppercase;
 				background: url("images/banner.jpg");
@@ -216,7 +215,7 @@
 				<section id="header">
 					<div class="container">
 
-						<!-- Logo -->
+						<!-- Title -->
 							<h1><a href="index.html" style="color: #ed786a;">Sandra Ortellado</a></h1>
 					</div>
 				</section>
@@ -263,7 +262,7 @@
 					<div class="container">
 						<h2>My <strong>Favorite Restaurant</strong>!</h2>
 						<h3><a href=https://www.statebirdsf.com/ target="_blank">State Bird Provisions</a></h3>
-						<p>One of the few <em>affordable</em> michelin star restaurants, State Bird Provisions is a fun experience where you can choose from tons of creative and surprising small dishes to mix and match.
+						<p>One of the few <i>affordable</i> michelin star restaurants, State Bird Provisions is a fun experience where you can choose from tons of creative and surprising small dishes to mix and match.
 							A great way to try something new and expand your palate with expertly crafted and curated options. Atmosphere is a bit hectic since it's popular and kind of small with lots of chefs roaming around 
 							offering small bites, but I guess that's part of the fun. Conversely, I also love <a href=https://www.bouchesf.com/ target="_blank">Bouche</a> for its intimate, cozy atmosphere.
 						</p>
@@ -271,14 +270,12 @@
 					<div> 
 						<h2>My <strong>Favorite Food</strong>!</h2>
 						<div style="display: flex; align-items: center; margin-right: 200px;">
-							<!-- Image Container -->
 							<div style="flex: 0 0 auto; margin-left: 15px; margin-right: 50px;">
 								<img
 									src="https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_make-your-own-sushi/sushi-kakkoii.jpeg"
 									style="width: 700px; height: auto; margin-bottom: 10px;"
 									alt="Sushi platter"
 								/>
-								<!-- Caption -->
 								<p style="margin: 0; text-align: center; font-style: italic; font-size: 14px; color: #555;">
 									Source: Kikkoman
 								</p>
