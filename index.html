@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Assignment: HTML</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<style>
+			@import url("fontawesome-all.min.css");
+			@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+			html {
+				box-sizing: border-box;
+			}
+
+			a {
+				text-decoration: none;
+				color: #3498db;
+				font-weight: bold;
+			}
+
+			p {
+				margin-left: 150px; 
+				margin-right: 150px;
+			}
+
+			body {
+				background: #f0f0f0;
+			}
+
+			body {
+				font-family: 'Source Sans Pro';
+				font-weight: 300;
+				color: #777;
+				line-height: 1.65em;
+				font-size: 15pt;
+			}
+
+			h1, h2, h3 {
+				font-weight: 600;
+				text-transform: uppercase;
+				color: #040404;
+			}
+
+			h2 {
+				font-size: 1.65em;
+				font-weight: 400;
+				letter-spacing: 4px;
+				margin: 0 0 1.5em 0;
+				line-height: 1.75em;
+			}
+
+			h3 {
+				font-size: 1em;
+				letter-spacing: 2px;
+				margin: 0 0 1.25em 0;
+			}
+
+			ul {
+				list-style: disc;
+				padding-left: 1em;
+				text-align: center;
+				list-style-position: inside;
+			}
+
+			li {
+					text-align: left;
+			}
+
+			section {
+				display: block;
+			}
+
+			#header {
+				position: relative;
+				position: relative;
+				background: #fff;
+				text-align: center;
+			}
+
+			#header > .container {
+				padding: 14em 0 7em 0;
+				border-bottom: solid 2px #e5e5e5;
+				box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+			}
+
+			#header h1 {
+				font-family: 'Arvo';
+				font-weight: 700;
+				color: #ed786a;
+				text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+				font-size: 3em;
+				letter-spacing: 13px;
+			}
+
+			#header p {
+				text-transform: uppercase;
+				font-weight: 400;
+				color: #888;
+				margin: 2.5em 0 0 0;
+				font-size: 0.85em;
+				letter-spacing: 3px;
+				text-align: center;
+			}
+			
+			#travels {
+				position: relative;
+				overflow: hidden;
+				background: #fff;
+				text-align: center;
+				padding: 6em 0;
+			}
+
+			#travels p {
+				text-align: center;
+			}
+
+			#travels ul.actions {
+				margin-top: 1.25em;
+			}
+			#animals {
+				position: relative;
+				overflow: hidden;
+				background: #fff;
+				color: #fff;
+				text-align: center;
+				border-top: solid 2px #e5e5e5;
+				border-bottom: solid 2px #e5e5e5;
+				box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
+				position: relative;
+				text-transform: uppercase;
+				background: url("images/banner.jpg");
+				background-size: cover;
+				padding: 10em 0;
+			}
+
+			#animals p {
+				font-weight: 400;
+				font-size: 2em;
+				line-height: 1.5em;
+				letter-spacing: 4px;
+				text-align: center;
+				margin: 0;
+			}
+
+			#animals > .container {
+				position: relative;
+			}
+
+			#foods {
+				position: relative;
+				overflow: hidden;
+				background: #fff;
+				padding: 6em 0;
+				text-align: center;
+			}
+
+			#books {
+				position: relative;
+				overflow: hidden;
+				border-top: solid 2px #e5e5e5;
+				background: #fafafa;
+				padding: 6em 0 8em 0;
+			}
+
+			table {
+				border-collapse: collapse;
+				border: 2px solid rgb(140 140 140);
+				font-family: sans-serif;
+				font-size: 0.8rem;
+				letter-spacing: 1px;
+			}
+
+			caption {
+				caption-side: top;
+				padding-bottom: 30px;
+				font-weight: bold;
+				font-size: large;
+			}
+
+			thead {
+				background-color: rgb(228 240 245);
+			}
+
+			th,
+			td {
+				border: 1px solid rgb(160 160 160);
+				padding: 8px 10px;
+			}
+
+			td:last-of-type {
+				text-align: center;
+			}
+
+			td img {
+				width: 100px;
+				height: auto; 
+      }
+
+			tbody > tr:nth-of-type(even) {
+				background-color: rgb(237, 238, 242);
+			}
+
+			figcaption {
+				font-family: 'Source Sans Pro';
+				font-weight: 300;
+				color: #777;
+				line-height: 1.65em;
+				font-size: 10pt;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1><a href="index.html" style="color: #ed786a;">Sandra Ortellado</a></h1>
+					</div>
+				</section>
+
+			<!-- Travels -->
+				<section id="travels">
+					<div class="container">
+						<header>
+							<h2>My <strong>Travels</strong>!</h2>
+						</header>
+						<div>
+							<section>
+								<a>
+									<figure>
+										<img src="images/IMG_4354.HEIC" style="width: 500px; height: auto;" alt="" />
+										<figcaption><i>Source: my own image</i></figcaption>
+									</figure>
+								</a>
+								<header>
+									<h3>Christmas in Kawaii</h3>
+								</header>
+								<p>December was filled with lots of turtle watching, snorkeling, and a lovely family wedding. 
+									I caught a few scrapes on the reef, but it was worth it to catch some great waves and cool fish!
+									Afterwards, I was excited to show my parents Oahu for the first time, and for them to enjoy their first beach vacation in many years.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- Favorite Animals -->
+				<section id="animals">
+					<div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+						<h2 style="color:#fff">My <strong>Favorite Animals/Names</strong>!</h2>
+						<ul>
+							<li>Mahala, my sweet female lop rabbit</li>
+							<li>Bucky, her husbun </li>
+							<li>Dulce, my childhood basset hound</li>
+						</ul>
+					</div>
+				</section>
+
+			<!-- Food -->
+				<section id="foods">
+					<div class="container">
+						<h2>My <strong>Favorite Restaurant</strong>!</h2>
+						<h3><a href=https://www.statebirdsf.com/ target="_blank">State Bird Provisions</a></h3>
+						<p>One of the few <em>affordable</em> michelin star restaurants, State Bird Provisions is a fun experience where you can choose from tons of creative and surprising small dishes to mix and match.
+							A great way to try something new and expand your palate with expertly crafted and curated options. Atmosphere is a bit hectic since it's popular and kind of small with lots of chefs roaming around 
+							offering small bites, but I guess that's part of the fun. Conversely, I also love <a href=https://www.bouchesf.com/ target="_blank">Bouche</a> for its intimate, cozy atmosphere.
+						</p>
+					</div>
+					<div> 
+						<h2>My <strong>Favorite Food</strong>!</h2>
+						<div style="display: flex; align-items: center; margin-right: 200px;">
+							<!-- Image Container -->
+							<div style="flex: 0 0 auto; margin-left: 15px; margin-right: 50px;">
+								<img
+									src="https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_make-your-own-sushi/sushi-kakkoii.jpeg"
+									style="width: 700px; height: auto; margin-bottom: 10px;"
+									alt="Sushi platter"
+								/>
+								<!-- Caption -->
+								<p style="margin: 0; text-align: center; font-style: italic; font-size: 14px; color: #555;">
+									Source: Kikkoman
+								</p>
+							</div>
+							<p style="margin: 0; text-align: left; flex: 1;">
+								Sushi is the perfect balance of fresh, delicate flavors and satisfying textures.
+								It's beautiful, tasty, and fun to eat. I love to eat it alongside edamame, tea, and miso soup.
+							</p>
+						</div>
+					</div>
+				</section>
+
+			<!-- Books -->
+				<section id="books">
+					<h2 style="text-align: center;">My <strong>Favorite Books</strong>!</h2>
+					<table>
+						<caption>
+							<i> In no particular order... </i>
+						</caption>
+						<thead>
+							<tr>
+								<th scope="col">Book Title</th>
+								<th scope="col">Cover Image</th>
+								<th scope="col">Author</th>
+								<th scope="col">Summary</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Invisible Man</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1556482805i/16981.jpg" />
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Ralph Ellison</td>
+								<td>Via <a href="https://www.cliffsnotes.com/literature/i/invisible-man/book-summary" target="_blank"><i>Cliff Notes</i></a>: Invisible Man is the story of a young, college-educated black man struggling to survive and succeed in a racially divided society that refuses to see him as a human being. 
+									Told in the form of a first-person narrative, Invisible Man traces the nameless narrator's physical and psychological journey from blind ignorance to enlightened awareness — or, according to the author, "from Purpose to Passion to Perception" — 
+									through a series of flashbacks in the forms of dreams and memories. Set in the U.S. during the pre-Civil Rights era when segregation laws barred black Americans from enjoying the same basic human rights as their white counterparts, 
+									the novel opens in the South (Greenwood, South Carolina), although the majority of the action takes place in the North (Harlem, New York)
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Jane Eyre</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg"/>
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Charlotte Brontë</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/10210.Jane_Eyre target= "_blank"><i>Goodreads</i></a>: Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. 
+									This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester. 
+									As her feelings for Rochester develop, Jane gradually uncovers Thornfield Hall's terrible secret, forcing her to make a choice. Should she stay with Rochester and live with the consequences, or follow her convictions - even if it means leaving the man she loves? 
+									A novel of intense power and intrigue, Jane Eyre dazzled readers with its passionate depiction of a woman's search for equality and freedom.</td>
+							</tr>
+							<tr>
+								<th scope="row">The Portrait of Dorian Gray</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1454087681i/489732.jpg"/>
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Oscar Wilde</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/489732.The_Picture_of_Dorian_Gray target= "_blank"><i>Goodreads</i></a>: Enthralled by his own exquisite portrait, Dorian Gray exchanges his soul for eternal youth and beauty. 
+									Influenced by his friend Lord Henry Wotton, he is drawn into a corrupt double life, indulging his desires in secret while remaining a gentleman in the eyes of polite society. Only his portrait bears the traces of his decadence.</td>
+							</tr>
+							<tr>
+								<th scope="row">Things Fall Apart</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1708114013i/37781.jpg"/>
+									<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Chinua Achebe</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/37781.Things_Fall_Apart target= "_blank"><i>Goodreads</i></a>: Enthralled by his own exquisite portrait, Dorian Gray exchanges his soul for eternal youth and beauty. 
+									A simple story of a "strong man" whose life is dominated by fear and anger, Things Fall Apart is written with remarkable economy and subtle irony. 
+									Uniquely and richly African, at the same time it reveals Achebe's keen awareness of the human qualities common to men of all times and places.</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+		</div>
+
+	</body>
+</html>
