@@ -2,67 +2,9 @@
 
 <html>
 	<head>
-		<title>Assignment 2: CSS</title>
+		<title>Assignment: CSS</title>
 		<meta charset="utf-8" />
-		<style>
-			@import url("fontawesome-all.min.css");
-			@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
-			html {
-				box-sizing: border-box;
-			}
-
-      #page-wrapper > section {
-				margin-bottom: 0;
-			}
-
-			h1, h2, h3 {
-				font-weight: 600;
-				text-transform: uppercase;
-				color: #040404;
-			}
-
-			section {
-				display: block;
-			}
-
-			#header {
-				position: relative;
-				position: relative;
-				background: #fff;
-				text-align: center;
-			}
-
-			#header > .container {
-				padding: 14em 0 7em 0;
-				border-bottom: solid 2px #e5e5e5;
-				box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
-			}
-
-			#header h1 {
-				font-family: 'Arvo';
-				font-weight: 700;
-				color: #ed786a;
-				text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-				font-size: 3em;
-				letter-spacing: 13px;
-			}
-
-			#header p {
-				text-transform: uppercase;
-				font-weight: 400;
-				color: #888;
-				margin: 2.5em 0 0 0;
-				font-size: 0.85em;
-				letter-spacing: 3px;
-				text-align: center;
-			}
-
-      a {
-				text-decoration: none;
-				color: #3498db;
-				font-weight: bold;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -72,9 +14,236 @@
 					<div class="container">
 
 						<!-- Title -->
-							<h1><a href="me_two.html" style="color: #ed786a;">Coming Soon</a></h1>
+							<h1><a href="about_me.html" style="color: #ed786a;">Sandra Ortellado</a></h1>
 					</div>
 				</section>
-      </div>
-    </body>
-  </html>
+			<!-- Socials -->
+				<div id="socials-container">
+					<img class="social-icon" src="images/5282541_fb_social media_facebook_facebook logo_social network_icon.png" alt="Facebook logo" />
+					<img class="social-icon" src="images/11053970_x_logo_twitter_new_brand_icon.png" alt="X logo" />
+				</div>
+			<!-- Travels -->
+				<section id="travels">
+					<div class="container">
+						<header>
+							<h2>My <strong>Travels</strong>!</h2>
+						</header>
+						<div>
+							<section>
+								<a>
+									<figure>
+										<img src="images/IMG_4354.jpg" style="width: 500px; height: auto;" alt="" />
+										<figcaption><i>Source: my own image</i></figcaption>
+									</figure>
+								</a>
+								<header>
+									<h3>Christmas in Kawaii</h3>
+								</header>
+								<p>December was filled with lots of turtle watching, snorkeling, and a lovely family wedding. 
+									I caught a few scrapes on the reef, but it was worth it to catch some great waves and cool fish!
+									Afterwards, I was excited to show my parents Oahu for the first time, and for them to enjoy their first beach vacation in many years.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+
+			<!-- Favorite Animals -->
+				<section id="animals">
+					<div class="container" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%;">
+						<h2 style="color:#fff">My <strong>Favorite Animals/Names</strong>!</h2>
+						<ul class="centered-list">
+							<li>Mahala, my sweet female lop rabbit</li>
+							<li>Bucky, her husbun </li>
+							<li>Dulce, my childhood basset hound</li>
+						</ul>
+					</div>
+				</section>
+
+			<!-- Food -->
+				<section id="foods">
+					<div class="container">
+						<h2>My <strong>Favorite Restaurant</strong>!</h2>
+						<h3><a href=https://www.statebirdsf.com/ target="_blank">State Bird Provisions</a></h3>
+						<p>One of the few <i>affordable</i> michelin star restaurants, State Bird Provisions is a fun experience where you can choose from tons of creative and surprising small dishes to mix and match.
+							A great way to try something new and expand your palate with expertly crafted and curated options. Atmosphere is a bit hectic since it's popular and kind of small with lots of chefs roaming around 
+							offering small bites, but I guess that's part of the fun. Conversely, I also love <a href=https://www.bouchesf.com/ target="_blank">Bouche</a> for its intimate, cozy atmosphere.
+						</p>
+					</div>
+					<div> 
+						<h2>My <strong>Favorite Food</strong>!</h2>
+						<div style="display: flex; align-items: center; text-align: center;">
+							<div id="background-image"></div>
+							<div style="flex: 1; text-align: center;">
+								<p style="margin: 0; text-align: left;">
+									Sushi is the perfect balance of fresh, delicate flavors and satisfying textures.
+									It's beautiful, tasty, and fun to eat. I love to eat it alongside edamame, tea, and miso soup.
+								</p>
+							</div>
+						</div>
+						<div style="width: 50%; left: 50%; font-style: italic; font-size: 14px; color: #555; margin: 0;">
+							Source: Kikkoman
+						</div>
+					</div>
+				</section>
+
+			<!-- Books -->
+				<section id="books">
+					<h2 style="text-align: center;">My <strong>Favorite Books</strong>!</h2>
+					<table>
+						<caption>
+							<i> In no particular order... </i>
+						</caption>
+						<thead>
+							<tr>
+								<th scope="col">Book Title</th>
+								<th scope="col">Cover Image</th>
+								<th scope="col">Author</th>
+								<th scope="col">Summary</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Invisible Man</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1556482805i/16981.jpg" />
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Ralph Ellison</td>
+								<td>Via <a href="https://www.cliffsnotes.com/literature/i/invisible-man/book-summary" target="_blank"><i>Cliff Notes</i></a>: Invisible Man is the story of a young, college-educated black man struggling to survive and succeed in a racially divided society that refuses to see him as a human being. 
+									Told in the form of a first-person narrative, Invisible Man traces the nameless narrator's physical and psychological journey from blind ignorance to enlightened awareness — or, according to the author, "from Purpose to Passion to Perception" — 
+									through a series of flashbacks in the forms of dreams and memories. Set in the U.S. during the pre-Civil Rights era when segregation laws barred black Americans from enjoying the same basic human rights as their white counterparts, 
+									the novel opens in the South (Greenwood, South Carolina), although the majority of the action takes place in the North (Harlem, New York)
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">Jane Eyre</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg"/>
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Charlotte Brontë</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/10210.Jane_Eyre target= "_blank"><i>Goodreads</i></a>: Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. 
+									This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester. 
+									As her feelings for Rochester develop, Jane gradually uncovers Thornfield Hall's terrible secret, forcing her to make a choice. Should she stay with Rochester and live with the consequences, or follow her convictions - even if it means leaving the man she loves? 
+									A novel of intense power and intrigue, Jane Eyre dazzled readers with its passionate depiction of a woman's search for equality and freedom.</td>
+							</tr>
+							<tr>
+								<th scope="row">The Portrait of Dorian Gray</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1454087681i/489732.jpg"/>
+										<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Oscar Wilde</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/489732.The_Picture_of_Dorian_Gray target= "_blank"><i>Goodreads</i></a>: Enthralled by his own exquisite portrait, Dorian Gray exchanges his soul for eternal youth and beauty. 
+									Influenced by his friend Lord Henry Wotton, he is drawn into a corrupt double life, indulging his desires in secret while remaining a gentleman in the eyes of polite society. Only his portrait bears the traces of his decadence.</td>
+							</tr>
+							<tr>
+								<th scope="row">Things Fall Apart</th>
+								<td>
+									<figure>
+										<img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1708114013i/37781.jpg"/>
+									<figcaption><i>Source: Goodreads</i></figcaption>
+									</figure>
+								</td>
+								<td>Chinua Achebe</td>
+								<td>Via <a href= https://www.goodreads.com/book/show/37781.Things_Fall_Apart target= "_blank"><i>Goodreads</i></a>: Enthralled by his own exquisite portrait, Dorian Gray exchanges his soul for eternal youth and beauty. 
+									A simple story of a "strong man" whose life is dominated by fear and anger, Things Fall Apart is written with remarkable economy and subtle irony. 
+									Uniquely and richly African, at the same time it reveals Achebe's keen awareness of the human qualities common to men of all times and places.</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			<!-- Form -->
+				<section id="form">
+					<h2>Contact <strong>Me</strong> (but not actually)</h2>
+					<form>
+						<div class="form-container">
+							<div class="label">
+									<label for="name">First Name:</label>
+							</div>
+							<div class="input">
+									<input type="text" id="first name" name="first name">
+							</div>
+							<div class="label">
+								<label for="name">Last Name:</label>
+							</div>
+							<div class="input">
+									<input type="text" id="last name" name="last name">
+							</div>
+							<div class="label">
+									<label for="city">City:</label>
+							</div>
+							<div class="input">
+									<input type="text" id="city" name="city">
+							</div>
+							<div class="label">
+									<label for="states">State:</label>
+							</div>
+							<div class="input" id="states">
+								<select name="states" id="states">
+									<option value="" selected disabled>Select One</option>
+									<option value="Alabama">Alabama</option>
+									<option value="Alaska">Alaska</option>
+									<option value="Arizona">Arizona</option>
+									<option value="Arkansas">Arkansas</option>
+									<option value="California">California</option>
+									<option value="Colorado">Colorado</option>
+									<option value="Connecticut">Connecticut</option>
+									<option value="Delaware">Delaware</option>
+									<option value="Florida">Florida</option>
+									<option value="Georgia">Georgia</option>
+									<option value="Hawaii">Hawaii</option>
+									<option value="Idaho">Idaho</option>
+									<option value="Illinois">Illinois</option>
+									<option value="Indiana">Indiana</option>
+									<option value="Iowa">Iowa</option>
+									<option value="Kansas">Kansas</option>
+									<option value="Kentucky">Kentucky</option>
+									<option value="Louisiana">Louisiana</option>
+									<option value="Maine">Maine</option>
+									<option value="Maryland">Maryland</option>
+									<option value="Massachusetts">Massachusetts</option>
+									<option value="Michigan">Michigan</option>
+									<option value="Minnesota">Minnesota</option>
+									<option value="Mississippi">Mississippi</option>
+									<option value="Missouri">Missouri</option>
+									<option value="Montana">Montana</option>
+									<option value="Nebraska">Nebraska</option>
+									<option value="Nevada">Nevada</option>
+									<option value="New Hampshire">New Hampshire</option>
+									<option value="New Jersey">New Jersey</option>
+									<option value="New Mexico">New Mexico</option>
+									<option value="New York">New York</option>
+									<option value="North Carolina">North Carolina</option>
+									<option value="North Dakota">North Dakota</option>
+									<option value="Ohio">Ohio</option>
+									<option value="Oklahoma">Oklahoma</option>
+									<option value="Oregon">Oregon</option>
+									<option value="Pennsylvania">Pennsylvania</option>
+									<option value="Rhode Island">Rhode Island</option>
+									<option value="South Carolina">South Carolina</option>
+									<option value="South Dakota">South Dakota</option>
+									<option value="Tennessee">Tennessee</option>
+									<option value="Texas">Texas</option>
+									<option value="Utah">Utah</option>
+									<option value="Vermont">Vermont</option>
+									<option value="Virginia">Virginia</option>
+									<option value="Washington">Washington</option>
+									<option value="West Virginia">West Virginia</option>
+									<option value="Wisconsin">Wisconsin</option>
+									<option value="Wyoming">Wyoming</option>
+								</select>
+							</div>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</section>
+			</div>
+	</body>
+</html>
