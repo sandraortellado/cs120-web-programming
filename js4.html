@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Problem 4</title>
+		<meta charset="utf-8" />
+	</head>
+  <body>
+  </body>
+  <script>
+
+    num1 = parseInt(prompt("Lower Number:"));
+    num2 = parseInt(prompt("Higher Number:"));
+    //could write code to enforce this but I'm low on time and it's not required.
+
+    sum = 0
+    for (let i = num1; i <= num2; i++) {
+      if (!(i % 2 == 0)) {
+        document.body.innerHTML += "<p>" + i + "</p><br/>";
+      }
+      sum += i
+    }
+    document.body.innerHTML += "<p>Sum is: " + sum + "</p>";
+
+</script>
+</html>
