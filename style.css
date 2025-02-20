@@ -46,6 +46,12 @@
     min-width: 100px !important;
   }
 
+  .testimonial-text {
+    font-size: 2vw !important;
+  }
+
+
+
 }
 
 
@@ -207,7 +213,7 @@ button {
 	font-weight: 700;
 	color: #000000;
 	font-size: 2em;
-	letter-spacing: -1px;
+	letter-spacing: -0.005em;
 	margin: 0;
 }
 
