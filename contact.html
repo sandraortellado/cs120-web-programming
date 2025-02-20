@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Romantic Rhythm: Contact Us</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="style.css">
+		<style>
+			@import url("fontawesome-all.min.css");
+			@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700|Poppins:300,400,600,700");
+			@import url("https://fonts.googleapis.com/css2?family=Parisienne");
+
+			#page-wrapper {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			
+			#form {
+				background-color: #fff;
+				padding: 4em 2em;
+				text-align: center;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				max-width: 800px;
+				margin: 2em auto 2em auto !important;
+			}
+
+			#form h2 {
+				color: #800020;
+				font-size: 2em;
+				margin-bottom: 1.5em;
+			}
+
+			form {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			.form-container {
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				gap: 15px;
+				align-items: center;
+			}
+
+			.label {
+				text-align: right;
+				font-weight: bold;
+				color: #333;
+			}
+
+			.input input {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				font-size: 14px;
+				box-sizing: border-box;
+			}
+
+			.input textarea {
+				resize: both;
+				min-height: 100px;
+				min-width: 350px;
+			}
+
+			.input textarea:focus {
+				border-color: #800020;
+				outline: none;
+				box-shadow: 0 0 5px rgba(128, 0, 32, 0.3);
+			}
+
+			.input input:focus {
+				border-color: #800020;
+				outline: none;
+				box-shadow: 0 0 5px rgba(128, 0, 32, 0.3);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div id="logo">
+							<img src="images/heart.png" style="width: 8%; height: auto; margin-right: 2%;" alt="Logo"/>
+							<!-- Title -->
+							<h1><a href="home.html" style="color: #000000; text-transform:none">Romantic Rhythm</a></h1>
+						</div>
+
+							<!-- Navigation -->
+						<nav>
+								<ul>
+									<li><a href="home.html">Home</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="testimonials.html">Testimonials</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+						</nav>
+					</div>
+				</section>
+
+			<!-- Form -->
+			<section id="form">
+				<h2><strong>CONTACT US</strong></h2>
+				<form>
+					<div class="form-container">
+						<div class="label">
+							<label for="first-name">First Name:</label>
+						</div>
+						<div class="input">
+							<input type="text" id="first-name" name="first-name" required>
+						</div>
+						<div class="label">
+							<label for="last-name">Last Name:</label>
+						</div>
+						<div class="input">
+							<input type="text" id="last-name" name="last-name" required>
+						</div>
+						<div class="label">
+							<label for="email">Email:</label>
+						</div>
+						<div class="input">
+							<input type="email" id="email" name="email" required>
+						</div>
+						<div class="label">
+							<label for="phone">Phone:</label>
+						</div>
+						<div class="input">
+							<input type="tel" id="phone" name="phone" required>
+						</div>
+						<div class="label">
+							<label for="message">Message:</label>
+						</div>
+						<div class="input">
+							<textarea id="message" name="message" rows="5" required></textarea>
+						</div>
+					</div>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+			<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+						<div id="footer-logo" style="display: flex; align-items: center;">
+								<img src="images/heart.png" style="width: 8%; height: auto; margin-right: 2%;" alt="Logo"/>
+								<h1><a href="home.html" style="color: #000000; text-transform:none">Romantic Rhythm</a></h1>
+						</div>
+
+						<!-- Social Media Links -->
+						<div id="socials" style="display: flex; align-items: center; justify-content: flex-end;">
+							<a href="#" target="_blank" style="margin-right: 10px;">
+								<i class="fab fa-facebook-f" style="font-size: 1.5em;"></i>
+							</a>
+							<a href="#" target="_blank" style="margin-right: 10px;">
+								<i class="fab fa-instagram" style="font-size: 1.5em;"></i>
+							</a>
+							<a href="#" target="_blank" style="margin-right: 10px;">
+								<i class="fab fa-twitter" style="font-size: 1.5em;"></i>
+							</a>
+						</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

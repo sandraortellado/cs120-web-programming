@@ -1,8 +1,55 @@
-@import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+@media (max-width: 768px) {
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    padding:0;
+  }
+
+  /* Header Adjustments */
+  #header > .container {
+    flex-direction: column;
+  }
+
+  #logo {
+    margin: 0 auto 1em auto;
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  #footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-logo {
+    margin-bottom: 1vw;
+    justify-content: center;
+  }
+
+  #socials {
+    justify-content: center;
+  }
+
+  #socials i {
+    font-size: 3vw !important;
+  }
+
+
+}
+
+
 html {
 	box-sizing: border-box;
+  height: 100%;
 }
+/* 
+#page-wrapper {
+  height: 100%;
+} */
 
 #page-wrapper > section {
 	margin-bottom: 0;
@@ -10,13 +57,12 @@ html {
 
 a {
 	text-decoration: none;
-	color: #3498db;
 	font-weight: bold;
 }
 
 p {
-	margin-left: 150px; 
-	margin-right: 150px;
+	margin-left: 1vw; 
+	margin-right: 1vw;
 }
 
 body {
@@ -24,58 +70,26 @@ body {
 }
 
 body {
-	font-family: 'Source Sans Pro';
+	font-family: 'Poppins';
 	font-weight: 300;
 	color: #777;
 	line-height: 1.65em;
-	font-size: 15pt;
+	font-size: 1.5vw;
+  height: 100%
 }
 
-h1 {
-	font-size: 3em;
-}
-
-h1, h2, h3 {
+h1, h2 {
+	font-family: 'Poppins';
 	font-weight: 600;
-	text-transform: uppercase;
 	color: #040404;
-	margin-bottom: 30px;
 }
 
 h2 {
-	font-size: 1.65em;
+	font-size: 3vw;
 	font-weight: 400;
-	letter-spacing: 4px;
-	margin: 0 0 30px 0;
+	/* letter-spacing: 4px; */
+	margin: 0 0 1.5em 0;
 	line-height: 1.75em;
-}
-
-h3 {
-	font-size: 1em;
-	letter-spacing: 2px;
-	margin: 0 0 1.25em 0;
-}
-
-ul {
-	list-style: disc;
-	padding-left: 1em;
-	text-align: center;
-	list-style-position: inside;
-}
-
-li {
-	text-align: left;
-}
-
-.centered-list {
-margin: 0 auto;
-width: 50%;
-border: 2px solid #ffffff;
-padding: 10px;
-}
-
-.centered-list li {
-text-align: left;
 }
 
 section {
@@ -84,210 +98,137 @@ section {
 
 #header {
 	position: relative;
-	position: relative;
 	background: #fff;
 	text-align: center;
+	border-bottom: 0.5em solid #800020;
+  padding-top: 2vw;
 }
 
 #header > .container {
-	padding: 14em 0 7em 0;
-	border-bottom: solid 2px #e5e5e5;
-	box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
-}
-
-#header h1 {
-	font-family: 'Arvo';
-	font-weight: 700;
-	color: #ed786a;
-	text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-	font-size: 3em;
-	letter-spacing: 13px;
-}
-
-#header p {
-	text-transform: uppercase;
-	font-weight: 400;
-	color: #888;
-	margin: 2.5em 0 0 0;
-	font-size: 0.85em;
-	letter-spacing: 3px;
-	text-align: center;
-}
-
-#socials-container {
-	position: absolute;
-	top: 100px;
-	right: 35px;
+	min-height: 3em;
 	display: flex;
 	justify-content: space-between;
-	width: auto;
-	padding: 0 2.5em;
+	align-items: center;
+	/* max-width: 1200px; */
+	margin: 2vw auto;
+	text-align: left;
+  padding: 2vw;
 }
 
-.social-icon {
-	width: 30px;
-	padding-right: 0.5em;
-	height: auto;
-}
-
-#travels {
-	position: relative;
-	overflow: hidden;
-	background: #fff;
-	text-align: center;
-	padding: 6em 0;
-}
-
-#travels p {
-	text-align: center;
-}
-
-#animals {
-	position: relative;
-	overflow: hidden;
-	background: #fff;
-	color: #fff;
-	text-align: center;
-	border-top: solid 2px #e5e5e5;
-	border-bottom: solid 2px #e5e5e5;
-	position: relative;
-	text-transform: uppercase;
-	background: url("images/banner.jpg");
-	background-size: cover;
-	padding: 10em 0;
-}
-
-#animals p {
-	font-weight: 400;
-	font-size: 2em;
-	line-height: 1.5em;
-	letter-spacing: 4px;
-	text-align: center;
+h1 {
 	margin: 0;
 }
 
-#animals > .container {
-	position: relative;
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 1vw auto auto 1vw;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1vw;
+  margin-left: 1vw;
 }
 
-#foods {
-	position: relative;
-	overflow: hidden;
-	background: #fff;
-	padding: 6em 0;
-	text-align: center;
+nav ul li {
+  margin-right: 1vw;
+  margin-left: 1vw;
+
 }
 
-#background-image {
-	background-image: url("https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_make-your-own-sushi/sushi-kakkoii.jpeg");
-	background-size: cover;
-	background-position: center;
-	width: 50%;
-	aspect-ratio: 16 / 9;
-	/* flex-shrink: 0; */
-	height: 0;
-	padding-top: 28.125%;
-	margin-right: 1.5em;
-	margin-bottom: 1.5em;
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.2vw;
+	display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#books {
-	position: relative;
-	overflow: hidden;
-	border-top: solid 2px #e5e5e5;
-	background: #fafafa;
-	padding: 6em 0 8em 0;
+nav ul li a:hover {
+	color: #800020;
 }
 
-table {
-	border-collapse: collapse;
-	border: 2px solid rgb(140 140 140);
-	font-family: sans-serif;
-	font-size: 0.8rem;
-	letter-spacing: 1px;
+#header h1 {
+	font-family: 'Parisienne';
+	font-weight: 700;
+	color: #000000;
+	font-size: 3em;
+	letter-spacing: -0.0195em;
 }
 
-caption {
-	caption-side: top;
-	padding-bottom: 30px;
-	font-weight: bold;
-	font-size: large;
-}
-
-thead {
-	background-color: rgb(228 240 245);
-}
-
-th,
-td {
-	border: 1px solid rgb(160 160 160);
-	padding: 8px 10px;
-}
-
-td:last-of-type {
-	text-align: center;
-}
-
-td img {
-	width: 100px;
-	height: auto; 
-}
-
-tbody > tr:nth-of-type(even) {
-	background-color: rgb(237, 238, 242);
-}
-
-figcaption {
-	font-family: 'Source Sans Pro';
-	font-weight: 300;
-	color: #777;
-	line-height: 1.65em;
-	font-size: 10pt;
-}
-
-#form {
-	text-align: center;
-}
-
-form {
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-.form-container {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 10px;
+#logo {
+	display: flex;
 	align-items: center;
-}
-
-label {
-	text-align: right;
-}
-
-input, textarea {
-	width: 100%;
+	margin-right: auto;
+	margin-left: 5%;
 }
 
 button {
-	grid-column: 1 / -1;
-	padding: 10px;
-	margin-top: 20px;
-	background-color: #3498db;
-	color: white;
+	background-color: #800020;
 	border: none;
-	cursor: pointer;
-	border-radius: 5px;
+	color: white;
+	padding: 1vw 2vw;
+	text-align: center;
+	text-decoration: none;
+  font-size: 1.5vw;
+	display: inline-block;
+	border-radius: 8px;
+	margin: 2%;
+	cursor:pointer;
 }
 
-.label {
-	text-align: right;
+#footer {
+	background-color: #f8f8f8;
+	padding: 1vw 0;
+	text-align: center;
+	border-top: 1px solid #ddd;
+  margin-top: auto;
+  margin-bottom:0;
 }
 
-.input {
-	text-align: left; /* Ensure input and select align to the left within the grid */
+#footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto 0;
+  padding: 20px 0;
 }
 
-button:hover {
-	background-color: #0056b3;
+#footer-logo {
+	display: flex;
+	align-items: center;
+}
+
+#footer-logo h1 {
+	font-family: 'Parisienne';
+	font-weight: 700;
+	color: #000000;
+	font-size: 2em;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+#footer-logo img {
+	width: 8%;
+	height: auto;
+	margin-right: 2%;
+}
+
+#socials {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#socials a {
+	margin-left: 15px;
+	color: #000;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#socials a:hover {
+	color: #800020;
 }
