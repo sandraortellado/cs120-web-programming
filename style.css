@@ -6,7 +6,6 @@
     padding:0;
   }
 
-  /* Header Adjustments */
   #header > .container {
     flex-direction: column;
   }
@@ -46,10 +45,6 @@ html {
 	box-sizing: border-box;
   height: 100%;
 }
-/* 
-#page-wrapper {
-  height: 100%;
-} */
 
 #page-wrapper > section {
 	margin-bottom: 0;
