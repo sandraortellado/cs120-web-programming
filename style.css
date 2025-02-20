@@ -37,6 +37,14 @@
     font-size: 3vw !important;
   }
 
+  #form {
+    max-width: 300px !important;
+  }
+
+  .input textarea {
+    max-width: 200px !important;
+    min-width: 100px !important;
+  }
 
 }
 
