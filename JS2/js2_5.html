@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Problem 5</title>
+		<meta charset="utf-8" />
+    <script>
+
+      window.onload = function() {
+        f = document.createElement("form");
+        document.body.appendChild(f);
+        i = document.createElement("input"); 
+        f.appendChild(i);
+        
+        helloButton = document.createElement('button');
+        helloButton.innerHTML = "Hello";
+        f.appendChild(helloButton);
+    
+        goodbyeButton = document.createElement('button');
+        goodbyeButton.innerHTML = "Goodbye";
+        f.appendChild(goodbyeButton);
+    
+        greetingsButton = document.createElement('button');
+        greetingsButton.innerHTML = "Greetings";
+        f.appendChild(greetingsButton);
+    
+        function speak() {
+          alert(this.innerHTML + " " + i.value);
+        }
+
+        helloButton.onclick = () => speak.call(helloButton);
+        goodbyeButton.onclick = () => speak.call(goodbyeButton);
+        greetingsButton.onclick = () => speak.call(greetingsButton);
+      }
+
+    </script>
+	</head>
+  <body>
+  </body>
+</html>

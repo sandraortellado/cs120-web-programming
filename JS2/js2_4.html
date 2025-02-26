@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Problem 4</title>
+		<meta charset="utf-8" />
+	</head>
+  <body>
+  </body>
+  <script>
+
+    f = document.createElement("form");
+    document.body.appendChild(f);
+    i = document.createElement("input"); 
+    f.appendChild(i);
+    helloButton = document.createElement('button');
+    helloButton.innerHTML = "Hello";
+    helloButton.onclick = function() { speak("Hello"); };
+    f.appendChild(helloButton);
+    goodbyeButton = document.createElement('button');
+    goodbyeButton.innerHTML = "Goodbye";
+    goodbyeButton.onclick = function() { speak("Goodbye"); };
+    f.appendChild(goodbyeButton);
+    greetingsButton = document.createElement('button');
+    greetingsButton.innerHTML = "Greetings";
+    greetingsButton.onclick = function() { speak("Greetings"); };
+    f.appendChild(greetingsButton);
+
+    function speak(prefix) {
+      alert(prefix + " " + i.value);
+    }
+  </script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Problem 6</title>
+		<meta charset="utf-8" />
+	</head>
+  <body>
+  </body>
+  <script>
+
+    window.onload = function() {
+
+      states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia"]
+      s = document.createElement("select");
+      s.size = states.length;
+      s.id = "stateSelect";
+
+      l = document.createElement("label");
+      l.innerHTML = "Pick a state:";
+      l.setAttribute("for", "stateSelect");
+      document.body.appendChild(l);
+
+      document.body.appendChild(s);
+      
+      for (state of states) {
+        o = document.createElement("option");
+        o.value = state;
+        o.innerHTML = state;
+        s.appendChild(o);
+      }
+
+      b = document.createElement("button");
+      b.innerHTML = "Add State";
+      document.body.appendChild(b);
+      div = document.createElement("div");
+      div.style.border = "1px solid black";
+      div.style.padding = "10px";
+      div.style.marginTop = "20px";
+      div.style.width = "10vw";
+      div.style.height = "10vw";
+      document.body.appendChild(div);
+
+      b2 = document.createElement("button");
+      b2.innerHTML = "Clear States";
+      document.body.appendChild(b2);
+
+      b.onclick = function() { 
+        selectedState = document.getElementById("stateSelect").value
+        div.innerHTML += selectedState + "<br/>";
+      };
+
+      b2.onclick = function() { 
+        while (div.firstChild) {
+          div.removeChild(div.firstChild);
+        }
+      };
+
+    }
+  </script>
+</html>
