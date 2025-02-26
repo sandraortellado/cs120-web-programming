@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Problem 1</title>
+		<meta charset="utf-8" />
+	</head>
+  <body>
+  </body>
+  <script>
+
+
+    var div = document.createElement("div");
+    div.id = "answer";
+    document.body.appendChild(div);
+
+    function count(arr, value) {
+      count = 0
+      for (num of arr) {
+        if (num < value) {
+          count+=1;
+        }
+      }
+      return count
+    }
+
+    function testCount() {
+      arr = new Array(1,2,3,4,5);
+      value = 5;
+      result = count(arr,value);
+      element = document.getElementById("answer");
+      element.innerHTML = result;
+    }
+
+    testCount();
+
+  </script>
+</html>
