@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Part 2</title>
+		<meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+  <body>
+    <div id="json"></div>
+  </body>
+  <script>
+    //read songs data using $.get and store in variable
+    songData = $.get('songs.json', function(songData) {
+      songText = JSON.stringify(songData, null, 2);
+      let html = ''
+      //loop through songs and build html section for it
+      songData.forEach(function(song) {
+		html += `
+		  <div class="song">
+		    <h2>${song.title}</h2>
+		    <p>Artist: ${song.artist}</p>
+		    <p>Genre: ${song.genres.join(', ')}</p>
+		    <p>Released: ${song.year}</p>
+	      </div>
+		`;
+	  });
+      //add all sections to json div
+	  $('#json').html(html);
+    })
+    
+  </script>
+</html>

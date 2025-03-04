@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "year": 1975,
+        "genres": ["Rock", "Classic Rock"]
+    },
+    {
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "year": 2017,
+        "genres": ["Pop"]
+    },
+    {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "year": 1976,
+        "genres": ["Rock"]
+    },
+    {
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "year": 2019,
+        "genres": ["Pop", "R&B"]
+    },
+    {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "year": 1971,
+        "genres": ["Rock", "Classic Rock"]
+    },
+    {
+        "title": "Old Town Road",
+        "artist": "Lil Nas X",
+        "year": 2019,
+        "genres": ["Country", "Rap"]
+    },
+    {
+        "title": "Rolling in the Deep",
+        "artist": "Adele",
+        "year": 2010,
+        "genres": ["Pop", "Soul"]
+    },
+    {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "year": 1991,
+        "genres": ["Rock", "Grunge"]
+    }
+]

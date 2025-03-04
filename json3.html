@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Part 3</title>
+		<meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+  <body>
+	<form id="genre-select">
+        <label for="genre">Select a genre:</label>
+        <select id="genre" name="genre">
+        </select>
+        <br><br>
+        <input type="submit" value="Filter">
+    </form>
+    <div id="json"></div>
+  </body>
+  <script>
+    //read data from songs.json and store in variable
+    $.get('songs.json', function(data) {
+        let genres = new Set(); //set for unique genres
+
+        //go through JSON elements (songs) and add genres to the set
+        data.forEach(song => {
+            song.genres.forEach(genre => {
+                genres.add(genre);
+            });
+        });
+
+        //make new option in select tag for each genre in the set
+        genres.forEach(genre => {
+            $('#genre').append(new Option(genre, genre));
+        });
+    })
+    $('input[type="submit"][value="Filter"]').click(function() {
+        //prevent default page reload on click
+        event.preventDefault();
+        //get the selected value from the dropdown
+        var selectedGenre = $('#genre').val();
+
+        //clear any current results before displaying a new selection
+        $('#json').empty();
+        
+        //call function to display songs of selected genre
+        displaySongs(selectedGenre);
+
+        function displaySongs(selectedGenre) {
+            $.get('songs.json', function(data) {
+            //go through JSON elements (songs)
+            data.forEach(song => {
+                //go through song genres and find matching one
+                song.genres.forEach(genre => {
+                    if (genre == selectedGenre) {
+                        //display song 
+                        $('#json').append('<p>' + song.title + '</p><br/>');
+                    }
+                });
+            });
+            });
+
+        }
+    });
+  </script>
+</html>
