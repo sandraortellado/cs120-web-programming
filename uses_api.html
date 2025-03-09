@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Assignment: Using an API</title>
+		<meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            #api-image {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+	</head>
+  <body>
+    <form id="search">
+        <label>What kind of art are you looking for?</label>
+        <input type="text" id="image-query"></input>
+        <button type="submit">Search</button>
+        <img id="api-image"/>
+    </form>
+  </body>
+  <script>
+
+    //listen for form submit
+    document.getElementById('search').addEventListener('submit', function(event) {
+        //prevent page reload before we can get query and call api
+        event.preventDefault();
+
+        //grab query value
+        query = document.getElementById('image-query').value;
+        url = `https://api.artic.edu/api/v1/artworks/search?q=${encodeURIComponent(query)}`;
+        
+        const options = {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json', 
+            },
+        };
+
+
+        fetch(url, options)
+        .then(response => response.json())
+        .then(responseData => {
+            const artwork = responseData.data[0]; //take the first artwork in response
+            const apiLink = artwork.api_link; //the api link has the high res image link for this artwork
+
+            //get the image element
+            const imageElement = document.getElementById("api-image");
+
+            //request again to api link with high res image info
+            fetch(apiLink)
+            .then(response => response.json())
+            .then(artworkData => {
+                const imageId = artworkData.data.image_id; //get image id to contruct image url
+
+                //construct image url
+                const iiifBaseUrl = responseData.config.iiif_url;//first part of url
+                const highResImageUrl = `${iiifBaseUrl}/${imageId}/full/1686,/0/default.jpg`;
+
+                imageElement.src = highResImageUrl; //put image src in element
+            })
+            .catch(error => console.error('Error fetching artwork details:', error));
+        })
+        .catch(error => console.error('Error:', error));
+    });
+  </script>
+</html>
