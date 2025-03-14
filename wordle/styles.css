@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;  /* Stack the divs vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 300px; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 50px); /* 6 columns */
+  grid-template-rows: repeat(6, 50px); /* 5 rows */
+  gap: 10px; /* Space between the divs */
+}
+
+.grid-item input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #333;
+  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Adjust as needed */
+    gap: 5px;
+    padding-top: 10%;
+}
+
+.key {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 1vw;
+}
+
+button {
+	background-color: lightblue;
+	border: none;
+	color: black;
+	padding: 1vw 1vw;
+	text-align: center;
+	text-decoration: none;
+    font-size: 1.6vw;
+	display: inline-block;
+	border-radius: 8px;
+	cursor:pointer;
+    width: 8vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 5vw;
+  }
+
+  .modal-content h2 {
+    margin: 0 0 10px;
+  }
+
+  .modal-content p {
+    margin: 0 0 20px;
+  }
+
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(5, 0.5fr); /* 5 columns, responsive layout */
+      grid-template-rows: repeat(6, 1fr); /* 6 rows, responsive layout */
+      gap: 5px; /* Smaller gap for smaller screens */
+    }
+  
+    .grid-item input {
+      width: 100%;
+      height: 100%;
+      font-size: 2vw; /* Adjust font size for smaller screens */
+      padding: 10%;
+    }
+  
+    #keyboard {
+      grid-template-columns: repeat(10, 1fr); /* Keep the keyboard layout but more responsive */
+      gap: 2px;
+      padding-top: 5%;
+    }
+  
+    .key {
+      padding: 8px; /* Smaller keys for smaller screens */
+    }
+  
+    .button-container {
+      padding-top: 2vw; /* Adjust padding for smaller screens */
+    }
+  
+    button {
+      font-size: 3.5vw; /* Adjust button font size for smaller screens */
+      width: 20vw; /* Make the button width more responsive */
+    }
+  
+    .modal-content {
+      padding: 10px;
+      width: 80vw; /* Make modal width responsive */
+    }
+  }
+
+
+
