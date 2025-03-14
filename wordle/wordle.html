@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6x5 Grid of Input Divs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>WORDLE</h1>
+    <div class="grid-container">
+      
+            <div class="grid-item row-1"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-1"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-1"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-1"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-1"><input type="text" maxlength="1"></div>
+
+
+            <div class="grid-item row-2"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-2"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-2"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-2"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-2"><input type="text" maxlength="1"></div>
+
+
+            <div class="grid-item row-3"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-3"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-3"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-3"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-3"><input type="text" maxlength="1"></div>
+
+
+            <div class="grid-item row-4"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-4"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-4"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-4"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-4"><input type="text" maxlength="1"></div>
+    
+
+            <div class="grid-item row-5"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-5"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-5"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-5"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-5"><input type="text" maxlength="1"></div>
+
+        
+            <div class="grid-item row-6"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-6"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-6"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-6"><input type="text" maxlength="1"></div>
+            <div class="grid-item row-6"><input type="text" maxlength="1"></div>
+
+    </div>
+    <div class="button-container">
+        <button>Guess!</button>
+    </div>
+    <div id="keyboard"></div>
+  </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2>You win!</h2>
+      <div id="emojiContainer"></div>
+      <p>Want to play again?</p>
+      <button class="modal-button" id="modalBtn">Restart Game</button>
+    </div>
+  </div>
+</body>
+<script src="game.js"></script>
+</html>
