@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.title-wrapper {
+    flex: 1;
+    text-align: center;
+}
+.header {
+    background: #222;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header-link {
+    color: white;
+    text-decoration: none;
+}
+.banner {
+    background: url('images/128449.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: left;
+    padding: 100px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-top: 2px solid grey;
+}
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+a:hover {
+    font-weight: bold;
+}
+.cart-icon-link {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cart-icon {
+    max-width: 40px;
+    height: auto;
+    cursor: pointer;
+}
